@@ -1,0 +1,16 @@
+h1 {
+    background-color: bisque;
+}
+
+#welcome {
+    background-color: gray;
+    margin: auto auto auto auto;
+}
+
+h1.heading {
+    color: green;
+}
+
+body{
+    background-image: url("");
+}
