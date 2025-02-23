@@ -1,12 +1,15 @@
-import { Link, NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import './index.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHome, faUser, faEnvelope, faSuitcase } from '@fortawesome/free-solid-svg-icons'
+import { faHome, faUser, faEnvelope, faSuitcase, faBars } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { useState } from 'react'
 
-const Sidebar = () => (
+const Navbar = () => {
+  const [showNav, setShowNav] = useState(false)
+  return (
     <div className='nav-bar'>
-        <nav>
+        <nav className={showNav ? 'mobile-show' : ''}>
             <NavLink exact="true" activeclassname="active" to="/">
                 <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
             </NavLink>
@@ -32,8 +35,10 @@ const Sidebar = () => (
                 </a>
             </li>
         </ul>
-        
-    </div>
-)
+        <FontAwesomeIcon onClick={() => setShowNav(true)} icon={faBars} color="#E35336" size='3x' className='hamburger-button' />
 
-export default Sidebar
+    </div>
+  )
+}
+
+export default Navbar
