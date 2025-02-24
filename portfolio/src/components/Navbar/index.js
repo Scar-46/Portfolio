@@ -27,12 +27,12 @@ const Navbar = () => {
         <ul>
             <li>
                 <a target="_blank" rel='noreferrer' href="https://www.linkedin.com/in/oscar-fer-jim/">
-                <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />
+                <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" className="anchor-button"/>
                 </a>
             </li>
             <li>
                 <a target="_blank" rel='noreferrer' href="https://github.com/Scar-46">
-                <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
+                <FontAwesomeIcon icon={faGithub} color="#4d4d4e" className="anchor-button"/>
                 </a>
             </li>
         </ul>
