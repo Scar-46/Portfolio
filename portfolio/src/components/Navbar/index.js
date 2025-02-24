@@ -16,11 +16,11 @@ const Navbar = () => {
             <NavLink exact="true" activeclassname="active" className="about-link" to="/about" onClick={() => setShowNav(false)}>
                 <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
             </NavLink>
-            <NavLink exact="true" activeclassname="active" className="contact-link" to="/contact" onClick={() => setShowNav(false)}>
-                <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
-            </NavLink>
             <NavLink exact="true" activeclassname="active" className="portfolio-link" to="/portfolio" onClick={() => setShowNav(false)}>
                 <FontAwesomeIcon icon={faSuitcase} color="#4d4d4e" />
+            </NavLink>
+            <NavLink exact="true" activeclassname="active" className="contact-link" to="/contact" onClick={() => setShowNav(false)}>
+                <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
             </NavLink>
             <FontAwesomeIcon icon={faClose} color="#E35336" size="3x" className='close-button' onClick={() => setShowNav(false)}/>
         </nav>

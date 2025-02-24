@@ -82,7 +82,7 @@
       width: 100%;
       text-align: center;
       transform: none;
-      padding: 20px;
+      padding: 30px 5px 5px 5px;
       box-sizing: border-box;
     }
 
@@ -92,16 +92,13 @@
       margin:  20px auto 0 auto;
       width: 125px;
     }
-
-    .logo-container { //This should be change
-      position: relative;
-      display: block;
-      width: 100px;
-      height: auto;
-      top: 60px;
-      left: 0;
+    .logo-container { 
+      position: static;
+      width: 100%;
+      text-align: center;
+      transform: none;
+      padding: 15px 5px 5px 5px;
       box-sizing: border-box;
-      margin: auto;
     }
   }
 }
