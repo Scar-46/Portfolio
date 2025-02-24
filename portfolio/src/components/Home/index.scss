@@ -103,11 +103,11 @@
 
     .logo-container { //This should be change
       position: relative;
+      display: block;
       width: 100px;
       height: auto;
-      top: 50px;
-      right: 0;
-      left: 0;
+      top: 60px;
+      left: -200px;
       box-sizing: border-box;
       margin: auto;
     }
