@@ -36,7 +36,7 @@ const Home = () => {
               idx={22}
             />
           </h1>
-          <h2>Front End Developer / Back End Developer / Full Stack Developer </h2>
+          <h2>Full Stack Developer & Data Analyst</h2>
           <Link to="/contact" className="flat-button">CONTACT ME</Link>
           <a target="_blank" rel='noreferrer' href="https://github.com/Scar-46">
             <FontAwesomeIcon icon={faGithub} size="2x" color="#4d4d4e" className="anchor-button"/>

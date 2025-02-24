@@ -102,33 +102,6 @@
       }
     }
   }
-
-  ul {
-    position: absolute;
-    bottom: 20px;
-    width: 100%;
-    display: block;
-    padding: 0;
-    list-style: none;
-    text-align: center;
-    margin: 0;
-
-    li {
-      a {
-        padding: 7px 0;
-        display: block;
-        font-size: 15px;
-        line-height: 16px;
-      }
-      
-      &:hover {
-        .anchor-button {
-          color: #E35336;
-        }
-      }
-    }
-  }
-
 }
 
 .hamburger-button, .close-button {
@@ -146,7 +119,7 @@
       display: none;
     }
 
-    nav { //Change how this look
+    nav {
       width: 40%;
       height: 100%;
       background: #181818;

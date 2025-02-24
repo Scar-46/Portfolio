@@ -24,18 +24,6 @@ const Navbar = () => {
             </NavLink>
             <FontAwesomeIcon icon={faClose} color="#E35336" size="3x" className='close-button' onClick={() => setShowNav(false)}/>
         </nav>
-        <ul>
-            <li>
-                <a target="_blank" rel='noreferrer' href="https://www.linkedin.com/in/oscar-fer-jim/">
-                <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" className="anchor-button"/>
-                </a>
-            </li>
-            <li>
-                <a target="_blank" rel='noreferrer' href="https://github.com/Scar-46">
-                <FontAwesomeIcon icon={faGithub} color="#4d4d4e" className="anchor-button"/>
-                </a>
-            </li>
-        </ul>
         <FontAwesomeIcon icon={faBars} color="#E35336" size='3x' className='hamburger-button' onClick={() => setShowNav(true)}/>
 
     </div>
