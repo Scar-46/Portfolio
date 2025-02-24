@@ -56,7 +56,7 @@ const Portfolio = () => {
                 </h1>
                 <div>{renderPortfolio(portfolio)}</div>
             </div>
-            <Loader type="pacman" />
+            <Loader type="ball-scale-ripple" />
         </>
     );
 }
