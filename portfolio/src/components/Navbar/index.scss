@@ -120,6 +120,7 @@
         font-size: 15px;
         line-height: 16px;
       }
+      
       &:hover {
         .anchor-icon {
           color: #E35336;
@@ -130,7 +131,7 @@
 
 }
 
-.hamburger-button {
+.hamburger-button, .close-button {
   display: none;
 }
 
@@ -155,10 +156,6 @@
       z-index: 2;
       margin: 0;
 
-      &.mobile-show {
-        display: block;
-      }
-
       a {
         display: flex;
         justify-content: center;
@@ -175,13 +172,19 @@
       a svg {
         opacity: 1 !important;
       }
+
+      &.mobile-show {
+        display: block;
+      }
     }
 
-    .hamburger-button {
+    .hamburger-button, .close-button{
       display: block;
       position: absolute;
       top: 15px;
       right: 15px;
+      cursor: pointer;
+      z-index: 1;
     }
   }
 }
