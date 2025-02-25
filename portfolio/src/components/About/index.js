@@ -20,7 +20,7 @@ const About = () => {
             />
           </h1>
           <p>
-            I'm a highly motivated Computer Science graduate looking for a role in an established IT company, 
+            I'm a highly motivated Computer Science graduate looking for a role in an established company, 
             where I can work with the latest technologies on challenging and diverse projects. With expertise in Python, 
             C++, and C#, I aim to bring innovative solutions and contribute to the success of the team.
           </p>
