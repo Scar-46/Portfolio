@@ -66,10 +66,6 @@
 }
 
 @media screen and (max-width: 1200px) {
-  .tags, .home-page h1::before,.home-page h1::after{ //This can be change
-    display: none;
-  }
-
   .home-page {
     .text-zone {
       position: initial;
@@ -80,12 +76,14 @@
       box-sizing: border-box;
     }
 
-    .flat-button, .anchor-button {
-      float: none;
-      display: block;
-      margin:  20px auto 0 auto;
-      width: 200px;
+    .button-zone {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0px;
+      height: 100px;
     }
+
     .logo-container { 
       position: static;
       width: 100%;

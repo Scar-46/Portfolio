@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
@@ -37,13 +37,15 @@ const Home = () => {
             />
           </h1>
           <h2>Full Stack Developer & Data Analyst</h2>
-          <Link to="/contact" className="flat-button">CONTACT ME</Link>
-          <a target="_blank" rel='noreferrer' href="https://github.com/Scar-46">
-            <FontAwesomeIcon icon={faGithub} size="2x" color="#4d4d4e" className="anchor-button"/>
-          </a>
-          <a target="_blank" rel='noreferrer' href="https://www.linkedin.com/in/oscar-fer-jim/">
-            <FontAwesomeIcon icon={faLinkedin} size="2x" color="#4d4d4e" className="anchor-button"/>
-          </a>
+          <div className="button-zone">
+            <Link to="/contact" className="flat-button">CONTACT ME</Link>
+            <a target="_blank" rel='noreferrer' href="https://github.com/Scar-46">
+              <FontAwesomeIcon icon={faGithub} size="2x" color="#4d4d4e" className="anchor-button"/>
+            </a>
+            <a target="_blank" rel='noreferrer' href="https://www.linkedin.com/in/oscar-fer-jim/">
+              <FontAwesomeIcon icon={faLinkedin} size="2x" color="#4d4d4e" className="anchor-button"/>
+            </a>
+          </div>
         </div>
         <Logo />
       </div>
