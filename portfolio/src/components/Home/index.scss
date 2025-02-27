@@ -27,22 +27,26 @@
     animation: fadeIn 1s 1.8s backwards;
   }
 
-  .flat-button,.anchor-button {
-    line-height: 1; 
+  .flat-button, .anchor-button {
     color: #E35336;
-    font-size: 18px;
-    letter-spacing: 4px;
-    font-family: sans-serif;
-    text-decoration: none;
     padding: 10px 18px;
     border: 1px solid #E35336;
     margin-top: 25px;
     float: left;
     animation: fadeInAnimation 1s 1.8s backwards;
+
     &:hover {
       background: #E35336;
       color: #181818fb;
     }
+  }
+
+  .flat-button {
+    line-height: 1.375;
+    font-size: 16px;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-family: sans-serif;
   }
   
   .anchor-button {
