@@ -5,7 +5,6 @@
   position: fixed;
   top: 0;
   z-index: 3;
-  min-height: 500px;
   border-right: 2px solid #333;
 
   .logo {
@@ -110,10 +109,10 @@
 
 @media screen and (max-width: 1200px) {
   .nav-bar {
-    background: transparent;
-    position: initial;
-    height: auto;
-    min-height: auto;
+    background: #181818;
+    width: 100%;
+    height: 60px;
+    position: fixed;
 
     ul, nav {
       display: none;
@@ -159,8 +158,10 @@
     }
 
     .hamburger-button, .close-button{
-      display: block;
+      display: flex;
       position: fixed;
+      align-items: center;
+      justify-content: center;
       top: 15px;
       right: 15px;
       cursor: pointer;
