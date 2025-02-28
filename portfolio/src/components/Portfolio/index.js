@@ -6,7 +6,6 @@ import portfolioData from '../../data/portfolio.json'
 
 const Portfolio = () => { 
     const [letterClass, setLetterClass] = useState('text-animate');
-    const [portfolio, setPortfolio] = useState([]);
 
     useEffect(() => {
         const timer = setTimeout(() => {
@@ -26,7 +25,7 @@ const Portfolio = () => {
                         return (
                             <div className="image-box" key={idx}>
                                 <img 
-                                src={port.image}
+                                src={port.cover}
                                 className="portfolio-image"
                                 alt="portfolio" />
                                 <div className="content">
