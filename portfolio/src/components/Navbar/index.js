@@ -23,7 +23,9 @@ const Navbar = () => {
             </NavLink>
             <FontAwesomeIcon icon={faClose} color="#E35336" size="3x" className='close-button' onClick={() => setShowNav(false)}/>
         </nav>
-        <FontAwesomeIcon icon={faBars} color="#E35336" size='3x' className='hamburger-button' onClick={() => setShowNav(true)}/>
+        <FontAwesomeIcon icon={faBars} color="#E35336" size='3x' className='hamburger-button' onClick={() => setShowNav(true)}>
+            <input type='checkbox'></input>
+        </FontAwesomeIcon> 
 
     </div>
   )
