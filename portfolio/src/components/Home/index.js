@@ -11,7 +11,7 @@ const Home = () => {
   const [letterClass] = useState('text-animate')
 
   const nameArray = ['O', 's', 'c', 'a', 'r']
-  const jobArray = ['w','e','b',' ','d','e','v','e','l','o','p','e','r','.']
+  const jobArray = ['W','e','b',' ','D','e','v','e','l','o','p','e','r','.']
   
   return (
     <>

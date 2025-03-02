@@ -93,7 +93,7 @@
 
     a.portfolio-link {
       &:after {
-        content: 'PORTFOLIO';
+        content: 'MY WORK';
       }
     }
 
@@ -133,18 +133,19 @@
       opacity: 0;
       animation: fadeIn 0.5s;
       animation-fill-mode: forwards;
+      border-left: 2px solid #333;
 
       a {
-        font-size: 26px;
+        font-size: 20px;
         display: flex;
         justify-content: left;
         top: 5px;
-        left: 15px;
+        left: 10px;
         align-items: center;
       }
       
       a:after {
-        font-size: 12px;
+        font-size: 11px;
         opacity: 1;
         position: initial;
         width: auto;

@@ -2,7 +2,7 @@
   .text-zone {
     position: absolute;
     left: 10%;
-    top: 50%;
+    top: 45%;
     transform: translateY(-50%);
     width: 40%;
     max-height: 90%;
@@ -64,6 +64,10 @@
       transform: none;
       padding: 30px 5px 5px 5px;
       box-sizing: border-box;
+    }
+
+    h1 {
+      font-size: 56px;
     }
 
     .button-zone {
