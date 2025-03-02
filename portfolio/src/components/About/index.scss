@@ -1,26 +1,11 @@
-.container.about-page {
-  position: relative;
-  z-index: 0;
-}
-
-.container.about-page .text-zone {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 20px;
-}
-
-.container.about-page .text-zone p {
-  font-family: Helvetica;
-  font-size: 15px;
-  margin-bottom: 20px;
-}
 
 .skills {
   display: flex;
   position: absolute;
   justify-content: center;
-  top: 38%;
+  align-items: center;
+  top: 50%;
+  transform: translateY(-50%);
   right: 10%;
   left: 55%;
   flex-wrap: wrap;
@@ -62,7 +47,7 @@
   color: #E35336;
   border-color: #E35336;
   font-size: 15px;
-  font-family: Helvetica;
+  font-family: Figtree;
   font-weight: 50px;
 }
 
