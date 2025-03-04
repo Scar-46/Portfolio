@@ -18,6 +18,13 @@ $primary-color: #E35336;
   font-style: normal;
 }
 
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+
 input,
 textarea {
   font-family: Figtree, sans-serif;

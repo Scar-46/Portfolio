@@ -1,12 +1,12 @@
 .nav-bar {
   font-family: 'Figtree', sans-serif;
   background: #181818;
-  width: 90px;
+  width: 92px;
   height: 100%;
   position: fixed;
   top: 0;
   z-index: 3;
-  border-right: 2px solid #333;
+  border-right: 1px solid #333;
 
   .logo {
     display: block;
@@ -71,17 +71,23 @@
         opacity: 0;
         transition: all 0.3s ease-out;
       }
+    }
 
-      &:first-child {
-        &:after {
-          content: 'HOME';
-        }
+    a.about-home {
+      &:after {
+        content: 'HOME';
       }
     }
 
     a.about-link {
       &:after {
         content: 'ABOUT';
+      }
+    }
+
+    a.experience-link {
+      &:after {
+        content: 'HISTORY';
       }
     }
 
@@ -93,7 +99,7 @@
 
     a.portfolio-link {
       &:after {
-        content: 'MY WORK';
+        content: 'PROJECTS';
       }
     }
 
@@ -109,14 +115,60 @@
   display: none;
 }
 
+.arrow {
+  position: fixed;
+  bottom: 20px;
+  right: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 80px;
+}
+
+.Date {
+  position: fixed;
+  bottom: 38px;
+  right: 80px;
+  font-size: 13px;
+  color: #8D8D8D;
+}
+
+.line1 {
+  width: 50px;
+  border-bottom: 1px solid #8D8D8D;
+  transform: rotate(90deg);
+}
+
+
+.line2,
+.line3 {
+  width: 10px;
+  border-bottom: 1px solid #8D8D8D;
+  position: absolute;
+}
+
+.line2 {
+  transform: rotate(45deg);
+  top: 75%;
+  left: 30%;
+}
+
+.line3 {
+  transform: rotate(-45deg);
+  top: 75%;
+  right: 30%;
+}
+
+
+
 @media screen and (max-width: 1200px) {
   .nav-bar {
-    font-family: 'Figtree', sans-serif;
-    background: #181818;
-    width: 100%;
-    height: 60px;
-    position: fixed;
-
+    background: transparent;
+    position: initial;
+    height: auto;
+    min-height: auto;
+    
     ul, nav {
       display: none;
     }

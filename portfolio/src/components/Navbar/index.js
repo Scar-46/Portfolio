@@ -1,34 +1,42 @@
-import { NavLink } from 'react-router-dom'
-import './index.scss'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHome, faUser, faEnvelope, faSuitcase, faBars, faClose } from '@fortawesome/free-solid-svg-icons'
-import { useState } from 'react'
+import { Link } from 'react-scroll';
+import './index.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHome, faUser, faTimeline, faEnvelope, faSuitcase, faBars, faClose } from '@fortawesome/free-solid-svg-icons';
+import { useState } from 'react';
 
 const Navbar = () => {
-  const [showNav, setShowNav] = useState(false)
+  const [showNav, setShowNav] = useState(false);
+
   return (
-    <div className='nav-bar'>
-        <nav className={showNav ? 'mobile-show' : ''}>
-            <NavLink exact="true" activeclassname="active" to="/" onClick={() => setShowNav(false)}>
-                <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
-            </NavLink>
-            <NavLink exact="true" activeclassname="active" className="about-link" to="/about" onClick={() => setShowNav(false)}>
-                <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
-            </NavLink>
-            <NavLink exact="true" activeclassname="active" className="portfolio-link" to="/portfolio" onClick={() => setShowNav(false)}>
-                <FontAwesomeIcon icon={faSuitcase} color="#4d4d4e" />
-            </NavLink>
-            <NavLink exact="true" activeclassname="active" className="contact-link" to="/contact" onClick={() => setShowNav(false)}>
-                <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
-            </NavLink>
-            <FontAwesomeIcon icon={faClose} color="#E35336" size="3x" className='close-button' onClick={() => setShowNav(false)}/>
-        </nav>
-        <FontAwesomeIcon icon={faBars} color="#E35336" size='3x' className='hamburger-button' onClick={() => setShowNav(true)}>
-            <input type='checkbox'></input>
-        </FontAwesomeIcon> 
+    <div className="nav-bar">
+      <nav className={showNav ? 'mobile-show' : ''}>
+        <Link to="home" smooth={true} duration={500} className="about-home"onClick={() => setShowNav(false)}>
+          <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
+        </Link>
+        <Link to="about" smooth={true} duration={500} className="about-link" onClick={() => setShowNav(false)}>
+          <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
+        </Link>
+        <Link to="experience" smooth={true} duration={500} className="experience-link" onClick={() => setShowNav(false)}>
+          <FontAwesomeIcon icon={faTimeline} color="#4d4d4e" />
+        </Link>
+        <Link to="portfolio" smooth={true} duration={500} className="portfolio-link" onClick={() => setShowNav(false)}>
+          <FontAwesomeIcon icon={faSuitcase} color="#4d4d4e" />
+        </Link>
+        <Link to="contact" smooth={true} duration={500} className="contact-link" onClick={() => setShowNav(false)}>
+          <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
+        </Link>
+        <FontAwesomeIcon icon={faClose} color="#E35336" size="3x" className="close-button" onClick={() => setShowNav(false)} />
+      </nav>
+      <FontAwesomeIcon icon={faBars} color="#E35336" size="3x" className="hamburger-button" onClick={() => setShowNav(true)} />
+      <div className="arrow">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <p className="Date">Mar 03, 2025</p>
 
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

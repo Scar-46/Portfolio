@@ -1,0 +1,107 @@
+
+.experience-content {
+  display: flex;
+}
+
+.experiences {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 70%;
+}
+
+.experience {
+  border: 1px solid #8d8d8d;
+  height: 150px;
+  padding: 20px 20px 20px 20px;
+
+  .experience-header {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .title {
+    font-family: 'Figtree', sans-serif;
+    font-size: 18px;
+    color: #fff;
+    margin: 0;
+  }
+  
+  .date {
+    font-family: 'Figtree', sans-serif;
+    font-size: 14px;
+    color: #E35336;
+    margin: 0;
+  }
+  
+  .company {
+    font-family: 'Figtree', sans-serif;
+    margin-top: 5px;
+    font-size: 14px;
+    color: #8d8d8d;
+    
+  }
+  
+  ul {
+    font-family: 'Figtree', sans-serif;
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+  
+  li {
+    margin-bottom: 5px;
+  }
+}
+
+.experience:hover {
+  border-color: #E35336;
+}
+
+
+.journey-dots {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 200px;
+}
+
+.journey-dots::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 15%;
+  height: 70%;
+  border-left: 1px solid #8d8d8d;
+  z-index: 0;
+}
+
+.dot-ex {
+  width: 20px;
+  height: 20px;
+  margin-left: 25px;
+  margin-right: 25px;
+  border-radius: 50%;
+  background-color: #181818;
+  border: 1px solid #8d8d8d;
+  z-index: 1;
+}
+
+.dot-ex.active {
+  width: 30px;
+  height: 30px;
+  background-color: #181818;
+  border: 1px solid #E35336;
+}
+
+.experience-image {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 540px;
+  height: 614px;
+  border: 1px solid #8d8d8d;
+}

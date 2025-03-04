@@ -1,24 +1,33 @@
-import { Route, Routes } from 'react-router-dom'
-import Home from './components/Home'
-import About from './components/About'
-import Contact from './components/Contact'
-import Layout from './components/Layout'
-import Portfolio from './components/Portfolio'
-import './App.scss'
+import Home from './components/Home';
+import About from './components/About';
+import Experience from './components/Experience';
+import Contact from './components/Contact';
+import Layout from './components/Layout';
+import Portfolio from './components/Portfolio';
+import './App.scss';
 
 function App() {
+
   return (
-    <>
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route path="about" element={<About />} />
-          <Route path="/portfolio" element={<Portfolio />} />
-          <Route path="/contact" element={<Contact />} />
-        </Route>
-      </Routes>
-    </>
-  )
+    <div>
+      <Layout />
+      <section id="home" className="section">
+        <Home />
+      </section>
+      <section id="about" className="section">
+        <About />
+      </section>
+      <section id="experience" className="section">
+        <Experience />
+      </section>
+      <section id="portfolio" className="section">
+        <Portfolio />
+      </section>
+      <section id="contact" className="section">
+        <Contact />
+      </section>
+    </div>
+  );
 }
 
-export default App
+export default App;
