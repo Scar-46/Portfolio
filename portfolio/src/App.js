@@ -14,13 +14,13 @@ function App() {
       <section id="home" className="section">
         <Home />
       </section>
-      {/* <section id="about" className="section">
+      <section id="about" className="section">
         <About />
       </section>
       <section id="experience" className="section">
         <Experience />
       </section>
-      <section id="portfolio" className="section">
+      {/* <section id="portfolio" className="section">
         <Portfolio />
       </section>
       <section id="contact" className="section">
