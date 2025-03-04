@@ -1,19 +1,16 @@
 .logo-container {
-  display: flex;
-  z-index: 0;
-  opacity: 0;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
 
-.solid-logo {
-  max-width: 600px;
-  width: 23vw;
-  height: auto;
-  aspect-ratio: 1 / 1;
-  z-index: 1;
-  border-radius: 50%;
-  border: 1px solid #8D8D8D;
-  object-fit: cover;
+
+  .solid-logo {
+    margin: 0;
+    padding: 0;
+    position: initial;
+    max-width: 500px;
+    width: 80%;
+    opacity: 0;
+    aspect-ratio: 1 / 1;
+    z-index: 1;
+    border-radius: 50%;
+    object-fit: cover;
+  }
 }

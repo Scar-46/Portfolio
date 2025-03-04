@@ -169,7 +169,7 @@
     height: auto;
     min-height: auto;
     
-    ul, nav {
+    ul, nav, .Date {
       display: none;
     }
 
@@ -222,6 +222,10 @@
       right: 15px;
       cursor: pointer;
       z-index: 1;
+    }
+
+    .arrow {
+      right: 10px;
     }
   }
 }
