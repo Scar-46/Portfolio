@@ -118,7 +118,7 @@
 .arrow {
   position: fixed;
   bottom: 20px;
-  right: 45px;
+  right: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -129,7 +129,7 @@
 .Date {
   position: fixed;
   bottom: 38px;
-  right: 80px;
+  right: 40px;
   font-size: 13px;
   color: #8D8D8D;
 }
@@ -150,16 +150,33 @@
 
 .line2 {
   transform: rotate(45deg);
-  top: 75%;
+  top: 78%;
   left: 30%;
 }
 
 .line3 {
   transform: rotate(-45deg);
-  top: 75%;
+  top: 78%;
   right: 30%;
 }
 
+.theme-toggle {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
 
 
 @media screen and (max-width: 1200px) {
