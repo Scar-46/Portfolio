@@ -129,3 +129,16 @@
   height: 12px;
   width: 12px;
 }
+
+@media screen and (max-width: 1200px) {
+
+  .portfolio-gallery {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  .image-box {
+    width: 95%;
+  }
+
+}

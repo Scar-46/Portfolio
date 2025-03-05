@@ -7,6 +7,7 @@ import portfolioData from '../../data/portfolio.json';
 const Portfolio = () => {
     const [letterClass, setLetterClass] = useState('text-animate');
     const [currentPage, setCurrentPage] = useState(0);
+    const [itemsPerPage, setItemsPerPage] = useState(window.innerWidth < 1200 ? 1 : 6);
 
     useEffect(() => {
         const timer = setTimeout(() => {
@@ -16,7 +17,22 @@ const Portfolio = () => {
         return () => clearTimeout(timer);
     }, []);
 
-    const itemsPerPage = 6;
+    // Update itemsPerPage on window resize
+    useEffect(() => {
+        const handleResize = () => {
+            const newItemsPerPage = window.innerWidth < 1200 ? 1 : 6;
+            setItemsPerPage(newItemsPerPage);
+            // reset currentPage to avoid out-of-bound pages when itemsPerPage changes
+            setCurrentPage(0);
+        };
+
+        window.addEventListener("resize", handleResize);
+        // Call handler once to ensure the state is correct on mount
+        handleResize();
+
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
+
     const totalPages = Math.ceil(portfolioData.portfolio.length / itemsPerPage);
 
     const handleNext = () => {
@@ -35,7 +51,11 @@ const Portfolio = () => {
             <div className="container portfolio-page">
                 <div className="text-zone">
                     <h1>
-                        <AnimatedLetters letterClass={letterClass} strArray={"Projects".split("")} idx={15} />
+                        <AnimatedLetters 
+                            letterClass={letterClass} 
+                            strArray={"Projects".split("")} 
+                            idx={15} 
+                        />
                     </h1>
                 </div>
 
@@ -46,7 +66,9 @@ const Portfolio = () => {
                             <div className="content">
                                 <p className="title">{port.name}</p>
                                 <h4 className="description">{port.description}</h4>
-                                <button className="btn" onClick={() => window.open(port.url)}>View</button>
+                                <button className="btn" onClick={() => window.open(port.url)}>
+                                    View
+                                </button>
                             </div>
                         </div>
                     ))}

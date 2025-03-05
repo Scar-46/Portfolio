@@ -12,7 +12,7 @@
 
 .experience {
   border: 1px solid #8d8d8d;
-  height: 150px;
+
   padding: 20px 20px 20px 20px;
 
   .experience-header {
@@ -104,4 +104,48 @@
   width: 540px;
   height: 614px;
   border: 1px solid #8d8d8d;
+}
+
+@media screen and (max-width: 1200px) {
+  .experience-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .title {
+    font-size: 16px !important;
+  }
+  .date{
+    font-size: 11px !important;
+  }
+
+  .company {
+    font-size: 11px !important;
+  }
+
+  .experiences {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 95%;
+  }
+
+  ul {
+    font-size: 12px !important;
+  }
+
+  .experience {
+    border: 1px solid #8d8d8d;
+    padding: 15px;
+    max-width: 100%;
+  }
+
+  .journey-dots {
+    display: none;
+  }
+  
+  .experience-image {
+    display: none;
+  }
 }

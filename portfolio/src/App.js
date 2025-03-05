@@ -20,12 +20,12 @@ function App() {
       <section id="experience" className="section">
         <Experience />
       </section>
-      {/* <section id="portfolio" className="section">
+      <section id="portfolio" className="section">
         <Portfolio />
       </section>
       <section id="contact" className="section">
         <Contact />
-      </section> */}
+      </section>
     </div>
   );
 }
