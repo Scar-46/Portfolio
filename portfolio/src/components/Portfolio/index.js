@@ -1,16 +1,18 @@
 import React, { useEffect, useState } from "react";
 import AnimatedLetters from "../AnimatedLetters";
+import "animate.css";
 import "./index.scss";
-import portfolioData from '../../data/portfolio.json';
+import portfolioData from "../../data/portfolio.json";
 
 const Portfolio = () => {
-    const [letterClass, setLetterClass] = useState('text-animate');
+    const [letterClass, setLetterClass] = useState("text-animate");
     const [currentPage, setCurrentPage] = useState(0);
     const [itemsPerPage, setItemsPerPage] = useState(window.innerWidth < 1200 ? 1 : 6);
+    const [animationClass, setAnimationClass] = useState("animate__animated animate__fadeIn");
 
     useEffect(() => {
         const timer = setTimeout(() => {
-            setLetterClass('text-animate-hover');
+            setLetterClass("text-animate-hover");
         }, 4000);
 
         return () => clearTimeout(timer);
@@ -31,12 +33,22 @@ const Portfolio = () => {
 
     const totalPages = Math.ceil(portfolioData.portfolio.length / itemsPerPage);
 
+    const handlePageChange = (newPage) => {
+        
+        setAnimationClass("animate__animated animate__fadeOut");
+        
+        setTimeout(() => {
+            setCurrentPage(newPage);
+            setAnimationClass("animate__animated animate__fadeIn");
+        }, 50);
+    };
+
     const handleNext = () => {
-        setCurrentPage((prev) => (prev + 1) % totalPages);
+        handlePageChange((currentPage + 1) % totalPages);
     };
 
     const handlePrev = () => {
-        setCurrentPage((prev) => (prev - 1 + totalPages) % totalPages);
+        handlePageChange((currentPage - 1 + totalPages) % totalPages);
     };
 
     const startIdx = currentPage * itemsPerPage;
@@ -55,7 +67,7 @@ const Portfolio = () => {
                     </h1>
                 </div>
 
-                <div className="portfolio-gallery">
+                <div className={`portfolio-gallery ${animationClass}`}>
                     {visibleProjects.map((port, idx) => (
                         <div className="image-box" key={idx}>
                             <img src={port.cover} className="portfolio-image" alt="portfolio" />
@@ -76,7 +88,7 @@ const Portfolio = () => {
                         <span
                             key={index}
                             className={index === currentPage ? "dot active" : "dot"}
-                            onClick={() => setCurrentPage(index)}
+                            onClick={() => handlePageChange(index)}
                         ></span>
                     ))}
                     <button onClick={handleNext}>&#10095;</button>
