@@ -1,17 +1,17 @@
-import React, { useEffect, useState } from "react";
-import Loader from 'react-loaders'
+import React, { useEffect, useState } from "react";import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
 
 const Experience = () => {
-  const [letterClass, setLetterClass] = useState('text-animate')
+  const [letterClass, setLetterClass] = useState('text-animate');
 
   useEffect(() => {
-    return setTimeout(() => {
-      setLetterClass('text-animate-hover')
-    }, 4000)
-  }, [])
-  
+      const timer = setTimeout(() => {
+          setLetterClass('text-animate-hover');
+      }, 4000);
+
+      return () => clearTimeout(timer);
+  }, []);
   
   return (
     <>

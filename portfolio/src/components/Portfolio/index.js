@@ -10,11 +10,13 @@ const Portfolio = () => {
     const [itemsPerPage, setItemsPerPage] = useState(window.innerWidth < 1200 ? 1 : 6);
 
     useEffect(() => {
-        return setTimeout(() => {
-          setLetterClass('text-animate-hover')
-        }, 4000)
-      }, [])
-    
+        const timer = setTimeout(() => {
+            setLetterClass('text-animate-hover');
+        }, 4000);
+
+        return () => clearTimeout(timer);
+    }, []);
+
     useEffect(() => {
         const handleResize = () => {
             const newItemsPerPage = window.innerWidth < 1200 ? 1 : 6;
