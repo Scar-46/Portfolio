@@ -8,12 +8,12 @@ const Contact = () => {
   const form = useRef();
 
   useEffect(() => {
-    const timeoutId = setTimeout(() => {
-      setLetterClass('text-animate-hover');
-    }, 3000);
-    return () => clearTimeout(timeoutId);
-  }, []);
-
+    return setTimeout(() => {
+      setLetterClass('text-animate-hover')
+    }, 4000)
+  }, [])
+  
+  
   const handleSubmit = (e) => {
     e.preventDefault();
     alert('Form submitted! (Implement backend to handle submission)');

@@ -10,24 +10,19 @@ const Portfolio = () => {
     const [itemsPerPage, setItemsPerPage] = useState(window.innerWidth < 1200 ? 1 : 6);
 
     useEffect(() => {
-        const timer = setTimeout(() => {
-            setLetterClass('text-animate-hover');
-        }, 3000);
-
-        return () => clearTimeout(timer);
-    }, []);
-
-    // Update itemsPerPage on window resize
+        return setTimeout(() => {
+          setLetterClass('text-animate-hover')
+        }, 4000)
+      }, [])
+    
     useEffect(() => {
         const handleResize = () => {
             const newItemsPerPage = window.innerWidth < 1200 ? 1 : 6;
             setItemsPerPage(newItemsPerPage);
-            // reset currentPage to avoid out-of-bound pages when itemsPerPage changes
             setCurrentPage(0);
         };
 
         window.addEventListener("resize", handleResize);
-        // Call handler once to ensure the state is correct on mount
         handleResize();
 
         return () => window.removeEventListener("resize", handleResize);

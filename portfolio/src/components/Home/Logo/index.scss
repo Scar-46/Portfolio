@@ -1,7 +1,10 @@
 .logo-container {
-
-
+  position: absolute;
+  left: 65%;
+  transform: translateY(-50%);
+  
   .solid-logo {
+    border: 2px solid #8D8D8D;
     margin: 0;
     padding: 0;
     position: initial;
