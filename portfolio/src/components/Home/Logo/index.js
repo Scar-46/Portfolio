@@ -24,9 +24,7 @@ const Logo = () => {
 
   return (
     <div className="logo-container" ref={bgRef}>
-      <div className="solid-logo">
-        <img ref={solidLogoRef} src={LogoS} alt="JavaScript Developer" />
-      </div>
+      <img className="solid-logo" ref={solidLogoRef} src={LogoS} alt="JavaScript Developer"/>
     </div>
   )
 }

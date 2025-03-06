@@ -13,7 +13,7 @@ const Navbar = () => {
       const sectionEls = document.querySelectorAll('section');
       let newSection = 'home';
       sectionEls.forEach((sectionEl) => {
-        if (window.scrollY >= sectionEl.offsetTop - 50) {
+        if (window.scrollY >= sectionEl.offsetTop) {
           newSection = sectionEl.id;
         }
       });
