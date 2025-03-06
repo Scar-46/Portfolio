@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { faPython, faAngular, faCss3Alt, faGitAlt, faHtml5, faJsSquare, faReact, faDocker } from '@fortawesome/free-brands-svg-icons'
-import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './index.scss'
@@ -79,7 +78,6 @@ const About = () => {
             </div>
         </div>
       </div>
-      <Loader type="ball-scale-ripple" />
     </>
   )
 }

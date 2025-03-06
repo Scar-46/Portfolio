@@ -1,12 +1,12 @@
 .nav-bar {
   font-family: 'Figtree', sans-serif;
-  background: #181818;
+  background: var(--background-color);
   width: 92px;
   height: 100%;
   position: fixed;
   top: 0;
   z-index: 3;
-  border-right: 1px solid #333;
+  border-right: 2px solid var(--secondary-color);
 
   .logo {
     display: block;
@@ -36,7 +36,7 @@
     a {
       font-family: 'Figtree', sans-serif;
       font-size: 26px;
-      color: #4d4d4e;
+      color: var(--secondary-color);
       display: block;
       line-height: 55px;
       height: 55px;
@@ -48,7 +48,7 @@
       }
 
       &:hover {
-        color: #E35336;
+        color: var(--primary-color);
 
         svg {
           opacity: 0;
@@ -105,7 +105,7 @@
 
     a.active {
       svg {
-        color: #E35336;
+        color: var(--primary-color);
       }
     }
   }
@@ -131,12 +131,12 @@
   bottom: 38px;
   right: 40px;
   font-size: 13px;
-  color: #8D8D8D;
+  color: var(--secondary-color);
 }
 
 .line1 {
   width: 50px;
-  border-bottom: 2px solid #8d8d8d86;
+  border-bottom: 2px solid var(--secondary-color);
   transform: rotate(90deg);
 }
 
@@ -144,7 +144,7 @@
 .line2,
 .line3 {
   width: 10px;
-  border-bottom: 1px solid #8D8D8D;
+  border-bottom: 2px solid var(--secondary-color);
   position: absolute;
 }
 
@@ -160,25 +160,6 @@
   right: 30%;
 }
 
-.theme-toggle {
-  position: fixed;
-  top: 10px;
-  right: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  
-  background: none;
-  border: none;
-  cursor: pointer;
-  transition: transform 0.3s ease-in-out;
-  &:hover {
-    transform: scale(1.1);
-  }
-}
-
-
 @media screen and (max-width: 1200px) {
   .nav-bar {
     background: transparent;
@@ -193,7 +174,7 @@
     nav {
       width: 40%;
       height: 100%;
-      background: #181818;
+      background: var(--background-color);
       top: 0%;
       left: 60%;
       position: fixed;

@@ -4,12 +4,16 @@ import Experience from './components/Experience';
 import Contact from './components/Contact';
 import Layout from './components/Layout';
 import Portfolio from './components/Portfolio';
+import Toggle from './components/Toggle';
+import { useState } from 'react';
 import './App.scss';
 
 function App() {
+  const [isDark, setIsDark] = useState(true);
 
   return (
-    <div>
+    <div className="App" data-theme={isDark ? "dark" : "light"}>
+      <Toggle isChecked={isDark} handleChange={() => setIsDark(!isDark)}></Toggle>
       <Layout />
       <section id="home" className="section">
         <Home />

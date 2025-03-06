@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { Link } from 'react-router-dom'
-import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
@@ -8,8 +7,7 @@ import Logo from './Logo'
 import './index.scss'
 
 const Home = () => {
-    const [letterClass, setLetterClass] = useState('text-animate');
-
+  const [letterClass, setLetterClass] = useState('text-animate');
   const nameArray = ['O', 's', 'c', 'a', 'r']
   const jobArray = ['W','e','b',' ','D','e','v','e','l','o','p','e','r','.']
 
@@ -48,17 +46,15 @@ const Home = () => {
           <div className="button-zone">
             <Link to="/contact" className="flat-button">CONTACT ME</Link>
             <a target="_blank" rel='noreferrer' href="https://github.com/Scar-46">
-              <FontAwesomeIcon icon={faGithub} size="2x" color="#4d4d4e" className="anchor-button"/>
+              <FontAwesomeIcon icon={faGithub} size="2x" color="var(--secondary-color)" className="anchor-button"/>
             </a>
             <a target="_blank" rel='noreferrer' href="https://www.linkedin.com/in/oscar-fer-jim/">
-              <FontAwesomeIcon icon={faLinkedin} size="2x" color="#4d4d4e" className="anchor-button"/>
+              <FontAwesomeIcon icon={faLinkedin} size="2x" color="var(--secondary-color)" className="anchor-button"/>
             </a>
           </div>
         </div>
         <Logo />
       </div>
-
-      <Loader type="ball-scale-ripple" />
     </>
   )
 }

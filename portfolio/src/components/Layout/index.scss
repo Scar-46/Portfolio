@@ -10,7 +10,7 @@
     position: relative;
     font-size: 56px;
     font-family: 'Coolvetica';
-    color: #E35336;
+    color: var(--primary-color);
     font-weight: 400;
     margin-top: 0;
     margin-bottom: 20px;
@@ -18,7 +18,7 @@
 
   p {
     font-size: 15px;
-    color: #fff;
+    color: var(--font-color);
     font-family: Figtree;
     max-width: 100%;
     word-wrap: break-word;
@@ -42,7 +42,7 @@
   }
 
   .text-animate-hover:hover {
-    color: #fff;
+    color: var(--font-color);
   }
 }
 

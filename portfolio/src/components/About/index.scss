@@ -17,7 +17,7 @@
   justify-content: center;
   width: 100px;
   height: 100px;
-  border: 2px solid #8d8d8d;
+  border: 2px solid var(--secondary-color);
   padding: 10px;
 }
 
@@ -41,15 +41,15 @@
 
 .skill:hover .skill-name {
   opacity: 1;
-  color: #E35336;
-  border-color: #E35336;
+  color: var(--primary-color);
+  border-color: var(--primary-color);
   font-size: 15px;
   font-family: Figtree;
   font-weight: 50px;
 }
 
 .skill:hover {
-  border-color: #E35336;
+  border-color: var(--primary-color);
 }
 
 @media screen and (max-width: 1200px) {

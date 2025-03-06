@@ -13,7 +13,7 @@
   }
 
   h1 {
-    color: #fff;
+    color: var(--font-color);
     font-size: 56px;
     line-height: 53px;
     margin: 0;
@@ -22,7 +22,7 @@
   }
 
   h2 {
-    color: #8d8d8d;
+    color: var(--secondary-color);
     margin-top: 20px;
     font-weight: 400;
     font-size: 12px;
@@ -32,16 +32,16 @@
   }
 
   .flat-button, .anchor-button {
-    color: #E35336;
+    color: var(--primary-color);
     padding: 10px 18px;
-    border: 1px solid #E35336;
+    border: 1px solid var(--primary-color);
     margin-top: 25px;
     float: left;
     animation: fadeInAnimation 1s 1.8s backwards;
 
     &:hover {
-      background: #E35336;
-      color: #181818fb;
+      background: var(--primary-color);
+      color: var(--background-color);
     }
   }
 

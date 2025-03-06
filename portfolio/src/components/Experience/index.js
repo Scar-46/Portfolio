@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";import Loader from 'react-loaders'
+import React, { useEffect, useState } from "react";
 import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
 
@@ -77,7 +77,6 @@ const Experience = () => {
           </div>
         </div>
       </div>
-      <Loader type="ball-scale-ripple" />
     </>
   )
 }
