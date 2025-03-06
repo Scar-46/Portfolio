@@ -86,9 +86,12 @@
     }
 
     .logo-container { 
+      display: flex;
       position: static;
       width: 100%;
       text-align: center;
+      justify-content: center;
+      align-items: center;
       transform: none;
       padding: 15px 5px 5px 5px;
       box-sizing: border-box;

@@ -73,7 +73,7 @@
       }
     }
 
-    a.about-home {
+    a.home-link {
       &:after {
         content: 'HOME';
       }
@@ -136,7 +136,7 @@
 
 .line1 {
   width: 50px;
-  border-bottom: 1px solid #8D8D8D;
+  border-bottom: 2px solid #8d8d8d86;
   transform: rotate(90deg);
 }
 

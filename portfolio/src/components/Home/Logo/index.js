@@ -17,25 +17,16 @@ const Logo = () => {
 
     gsap.fromTo(
       solidLogoRef.current,
-      {
-        opacity: 0,
-      },
-      {
-        opacity: 1,
-        delay: 4,
-        duration: 1,
-      }
+      { opacity: 0 },
+      { opacity: 1, delay: 4, duration: 1 }
     )
   }, [])
 
   return (
     <div className="logo-container" ref={bgRef}>
-      <img
-        className="solid-logo"
-        ref={solidLogoRef}
-        src={LogoS}
-        alt="JavaScript Developer"
-      />
+      <div className="solid-logo">
+        <img ref={solidLogoRef} src={LogoS} alt="JavaScript Developer" />
+      </div>
     </div>
   )
 }
