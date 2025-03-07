@@ -60,6 +60,10 @@
 }
 
 @media screen and (max-width: 1200px) {
+  #home {
+    height: 100vh;
+  }
+
   .container.home-page {
     max-width: 100vw;
     padding-top: 0px;

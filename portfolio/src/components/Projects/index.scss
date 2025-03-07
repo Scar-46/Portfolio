@@ -141,6 +141,14 @@
 
 @media screen and (max-width: 1200px) {
 
+  .container.projects-page{
+    padding-bottom: 100px;
+    height: auto !important;
+    border-top: 0px;
+    border-bottom: 0px;
+  
+  }  
+
   .projects-gallery {
     display: flex;
     justify-content: center;
