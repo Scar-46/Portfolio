@@ -1,10 +1,19 @@
 
+#about {
+  height: 65vh;
+}
+
+.container.about-page{
+  height: 50vh !important;
+  border-top: 2px solid var(--secondary-color);
+  border-bottom: 2px solid var(--secondary-color);
+}
+
 .skills {
   display: flex;
   position: absolute;
   justify-content: center;
   align-items: center;
-  transform: translateY(-100%);
   left: 55%;
   flex-wrap: wrap;
   gap: 20px;
@@ -57,6 +66,6 @@
     position: static;
     transform: none;
     margin: 20px;
-    padding-bottom: 200px;
+    padding-bottom: 100px;
   }
 }

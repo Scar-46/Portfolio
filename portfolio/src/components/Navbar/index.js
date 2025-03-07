@@ -13,7 +13,8 @@ const Navbar = () => {
       const sectionEls = document.querySelectorAll('section');
       let newSection = 'home';
       sectionEls.forEach((sectionEl) => {
-        if (window.scrollY >= sectionEl.offsetTop) {
+        let offsetT = sectionEl.offsetTop;
+        if ((window.scrollY) >= offsetT - 300) {
           newSection = sectionEl.id;
         }
       });
@@ -29,12 +30,13 @@ const Navbar = () => {
       <Link to="home" smooth={true} duration={500} className={`home-link ${currentSection === 'home' ? 'active' : ''}`} onClick={() => setShowNav(false)}>
           <FontAwesomeIcon icon={faHome} color="var(--secondary-color)" />
         </Link>
-        <Link to="about" smooth={true} duration={500} className={`about-link ${currentSection === 'about' ? 'active' : ''}`} onClick={() => setShowNav(false)}>
+        <Link to="about" smooth={true} duration={500} offset={-200} className={`about-link ${currentSection === 'about' ? 'active' : ''}`} onClick={() => setShowNav(false)}>
           <FontAwesomeIcon icon={faUser} color="var(--secondary-color)" />
         </Link>
-        <Link to="experience" smooth={true} duration={500} className={`experience-link ${currentSection === 'experience' ? 'active' : ''}`} onClick={() => setShowNav(false)}>          <FontAwesomeIcon icon={faBuilding} color="var(--secondary-color)" />
+        <Link to="experience" smooth={true} duration={500} className={`experience-link ${currentSection === 'experience' ? 'active' : ''}`} onClick={() => setShowNav(false)}>          
+        <FontAwesomeIcon icon={faBuilding} color="var(--secondary-color)" />
         </Link>
-        <Link to="portfolio" smooth={true} duration={500} className={`portfolio-link ${currentSection === 'portfolio' ? 'active' : ''}`} onClick={() => setShowNav(false)}>
+        <Link to="portfolio" smooth={true} duration={500} offset={-50} className={`portfolio-link ${currentSection === 'portfolio' ? 'active' : ''}`} onClick={() => setShowNav(false)}>
           <FontAwesomeIcon icon={faSuitcase} color="var(--secondary-color)" />
         </Link>
         <Link to="contact" smooth={true} duration={500} className={`contact-link ${currentSection === 'contact' ? 'active' : ''}`} onClick={() => setShowNav(false)}>

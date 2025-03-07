@@ -1,4 +1,13 @@
 
+
+.container.portfolio-page{
+  box-sizing: border-box;
+  height: 90vh !important;
+  border-top: 2px solid var(--secondary-color);
+  border-bottom: 2px solid var(--secondary-color);
+
+}
+
 .portfolio-gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

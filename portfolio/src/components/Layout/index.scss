@@ -2,10 +2,15 @@
 .container.about-page,
 .container.experience-page,
 .container.portfolio-page {
+  display: flex;
   position: relative;
+  box-sizing: border-box;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
   max-width: 75vw;
   margin-left: 15vw;
-  
+
   h1 {
     position: relative;
     font-size: 56px;
