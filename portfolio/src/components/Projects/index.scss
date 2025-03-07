@@ -1,8 +1,11 @@
 
+#projects {
+  min-height: 100vh;
+}
 
 .container.projects-page{
   box-sizing: border-box;
-  height: 90vh !important;
+  min-height: 85vh !important;
   border-top: 2px solid var(--secondary-color);
   border-bottom: 2px solid var(--secondary-color);
 

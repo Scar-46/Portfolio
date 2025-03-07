@@ -1,10 +1,10 @@
 
 #about {
-  height: 65vh;
+  min-height: 65vh;
 }
 
 .container.about-page{
-  height: 50vh !important;
+  min-height: 50vh !important;
   border-top: 2px solid var(--secondary-color);
   border-bottom: 2px solid var(--secondary-color);
 }
@@ -14,7 +14,7 @@
   position: absolute;
   justify-content: center;
   align-items: center;
-  left: 55%;
+  left: 50%;
   flex-wrap: wrap;
   gap: 20px;
 }
