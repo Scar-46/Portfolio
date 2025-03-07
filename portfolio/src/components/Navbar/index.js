@@ -36,7 +36,7 @@ const Navbar = () => {
         <Link to="experience" smooth={true} duration={500} className={`experience-link ${currentSection === 'experience' ? 'active' : ''}`} onClick={() => setShowNav(false)}>          
         <FontAwesomeIcon icon={faBuilding} color="var(--secondary-color)" />
         </Link>
-        <Link to="portfolio" smooth={true} duration={500} offset={-50} className={`portfolio-link ${currentSection === 'portfolio' ? 'active' : ''}`} onClick={() => setShowNav(false)}>
+        <Link to="projects" smooth={true} duration={500} offset={-50} className={`projects-link ${currentSection === 'projects' ? 'active' : ''}`} onClick={() => setShowNav(false)}>
           <FontAwesomeIcon icon={faSuitcase} color="var(--secondary-color)" />
         </Link>
         <Link to="contact" smooth={true} duration={500} className={`contact-link ${currentSection === 'contact' ? 'active' : ''}`} onClick={() => setShowNav(false)}>

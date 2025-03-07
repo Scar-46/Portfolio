@@ -3,7 +3,7 @@ import About from './components/About';
 import Experience from './components/Experience';
 import Contact from './components/Contact';
 import Layout from './components/Layout';
-import Portfolio from './components/Portfolio';
+import Projects from './components/Projects';
 import Toggle from './components/Toggle';
 import { useState } from 'react';
 import './App.scss';
@@ -24,8 +24,8 @@ function App() {
       <section id="experience" className="section">
         <Experience />
       </section>
-      <section id="portfolio" className="section">
-        <Portfolio />
+      <section id="projects" className="section">
+        <Projects />
       </section>
       <section id="contact" className="section">
         <Contact />

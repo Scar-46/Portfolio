@@ -2,9 +2,9 @@ import React, { useEffect, useState } from "react";
 import AnimatedLetters from "../AnimatedLetters";
 import "animate.css";
 import "./index.scss";
-import portfolioData from "../../data/portfolio.json";
+import portfolioData from "../../data/projects.json";
 
-const Portfolio = () => {
+const Projects = () => {
     const [letterClass, setLetterClass] = useState("text-animate");
     const [currentPage, setCurrentPage] = useState(0);
     const [itemsPerPage, setItemsPerPage] = useState(window.innerWidth < 1200 ? 1 : 6);
@@ -31,7 +31,7 @@ const Portfolio = () => {
         return () => window.removeEventListener("resize", handleResize);
     }, []);
 
-    const totalPages = Math.ceil(portfolioData.portfolio.length / itemsPerPage);
+    const totalPages = Math.ceil(portfolioData.projects.length / itemsPerPage);
 
     const handlePageChange = (newPage) => {
         
@@ -52,11 +52,11 @@ const Portfolio = () => {
     };
 
     const startIdx = currentPage * itemsPerPage;
-    const visibleProjects = portfolioData.portfolio.slice(startIdx, startIdx + itemsPerPage);
+    const visibleProjects = portfolioData.projects.slice(startIdx, startIdx + itemsPerPage);
 
     return (
         <>
-            <div className="container portfolio-page">
+            <div className="container projects-page">
                 <div className="text-zone">
                     <h1>
                         <AnimatedLetters 
@@ -67,10 +67,10 @@ const Portfolio = () => {
                     </h1>
                 </div>
 
-                <div className={`portfolio-gallery ${animationClass}`}>
+                <div className={`projects-gallery ${animationClass}`}>
                     {visibleProjects.map((port, idx) => (
                         <div className="image-box" key={idx}>
-                            <img src={port.cover} className="portfolio-image" alt="portfolio" />
+                            <img src={port.cover} className="projects-image" alt="projects" />
                             <div className="content">
                                 <p className="title">{port.name}</p>
                                 <h4 className="description">{port.description}</h4>
@@ -98,4 +98,4 @@ const Portfolio = () => {
     );
 };
 
-export default Portfolio;
+export default Projects;
