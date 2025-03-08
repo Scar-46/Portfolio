@@ -1,43 +1,43 @@
 {
     "projects": [
         {
-            "cover": "/projects/1/one.png",
+            "cover": "/projects/one.png",
             "title": "PlaceHolder1",
             "description": "React, JSX, Tailwind, Jest",
             "url": "http://google.com"
         },
         {
-            "cover": "/projects/1/two.png",
+            "cover": "/projects/two.png",
             "title": "PlaceHolder2",
             "description": "React, JSX, Tailwind, Jest",
             "url": "http://google.com"
         },
         {
-            "cover": "/projects/1/three.png",
+            "cover": "/projects/three.png",
             "title": "PlaceHolder3",
             "description": "React, JSX, Tailwind, Jest",
             "url": "http://google.com"
         },
         {
-            "cover": "/projects/1/four.png",
+            "cover": "/projects/four.png",
             "title": "PlaceHolder4",
             "description": "React, JSX, Tailwind, Jest",
             "url": "http://google.com"
         },
         {
-            "cover": "/projects/1/two.png",
+            "cover": "/projects/five.png",
             "title": "PlaceHolder2",
             "description": "React, JSX, Tailwind, Jest",
             "url": "http://google.com"
         },
         {
-            "cover": "/projects/1/three.png",
+            "cover": "/projects/three.png",
             "title": "PlaceHolder3",
             "description": "React, JSX, Tailwind, Jest",
             "url": "http://google.com"
         },
         {
-            "cover": "/projects/1/four.png",
+            "cover": "/projects/four.png",
             "title": "PlaceHolder4",
             "description": "React, JSX, Tailwind, Jest",
             "url": "http://google.com"
