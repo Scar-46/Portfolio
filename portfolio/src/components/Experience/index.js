@@ -5,6 +5,7 @@ import "./index.scss";
 
 const Experience = () => {
   const [letterClass, setLetterClass] = useState("text-animate");
+  const [hoveredIndex, setHoveredIndex] = useState(null);
   const [hoveredImage, setHoveredImage] = useState(experiencesData[0].image);
 
   useEffect(() => {
@@ -32,7 +33,11 @@ const Experience = () => {
             <div
               key={index}
               className="experience"
-              onMouseEnter={() => setHoveredImage(exp.image)}
+              onMouseEnter={() => {
+                setHoveredIndex(index);
+                setHoveredImage(exp.image);
+              }}
+              onMouseLeave={() => setHoveredIndex(null)}
             >
               <div className="experience-header">
                 <h2 className="title">{exp.title}</h2>
@@ -49,10 +54,13 @@ const Experience = () => {
         </div>
 
         <div className="journey-dots">
-            <span className="dot-ex active"></span>
-            <span className="dot-ex"></span>
-            <span className="dot-ex"></span>
-          </div>
+          {experiencesData.map((_, index) => (
+            <span
+              key={index}
+              className={`dot-ex ${hoveredIndex === index ? "active" : ""}`}
+            ></span>
+          ))}
+        </div>
 
         <div className="experience-image">
           <img src={hoveredImage} alt="Experience" />

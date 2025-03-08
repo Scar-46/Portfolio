@@ -57,14 +57,13 @@
   border-color: var(--primary-color);
 }
 
-
 .journey-dots {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 31%;
+  gap: 30%;
 }
 
 .journey-dots::before {
@@ -78,8 +77,8 @@
 }
 
 .dot-ex {
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   margin-left: 25px;
   margin-right: 25px;
   border-radius: 50%;
@@ -91,6 +90,8 @@
 .dot-ex.active {
   width: 30px;
   height: 30px;
+  margin-left: 15px;
+  margin-right: 15px;
   background-color: var(--background-color);
   border: 1px solid var(--primary-color);
 }
