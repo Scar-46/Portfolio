@@ -56,6 +56,14 @@
     box-sizing: border-box;
     min-height: 150px;
   }
+  
+  input[type='text']::placeholder,
+  input[type='email']::placeholder,
+  textarea::placeholder {
+    color: var(--sfont-color);
+    opacity: 0.4;
+  }
+
 
   .flat-button {
     color: var(--primary-color);

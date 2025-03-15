@@ -1,5 +1,16 @@
 [
     {
+      "title": "Data Engineer",
+      "company": "Observatorio de Datos Institucionales - UCR",
+      "date": "Mar 2025 - Ongoing",
+      "responsibilities": [
+        "Developed and maintained relational and non-relational databases, improving data accessibility.",
+        "Performed system maintenance and optimization, enhancing overall computer performance.",
+        "Designed and implemented network topologies to improve communication and efficiency."
+      ],
+      "image": "/experiences/ObDI2.png"
+    },
+    {
       "title": "Data Analyst - Community Service",
       "company": "Universidad de Costa Rica",
       "date": "Nov 2023 - Nov 2024",
@@ -20,17 +31,6 @@
         "Received specialized training in CCTV systems, enhancing expertise in security camera troubleshooting."
       ],
       "image": "/experiences/Bosch-Emblem.png"
-    },
-    {
-      "title": "Technical Support Specialist - Internship",
-      "company": "Servicios Ecológicos M.B.B. S.A",
-      "date": "Sep 2019 - Oct 2019",
-      "responsibilities": [
-        "Developed and maintained relational and non-relational databases, improving data accessibility.",
-        "Performed system maintenance and optimization, enhancing overall computer performance.",
-        "Designed and implemented network topologies to improve communication and efficiency."
-      ],
-      "image": "/experiences/SE.png"
     }
   ]
   

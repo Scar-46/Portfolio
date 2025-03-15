@@ -1,46 +1,22 @@
 {
     "projects": [
         {
-            "cover": "/projects/one.png",
-            "title": "PlaceHolder1",
-            "description": "React, JSX, Tailwind, Jest",
-            "url": "http://google.com"
+            "cover": "/projects/Game.png",
+            "title": "Unity 2D Roguelike Game",
+            "description": "Unity2D, C#, State machine",
+            "url": "https://github.com/Scar-46/UnityTopdownGame"
         },
         {
-            "cover": "/projects/two.png",
-            "title": "PlaceHolder2",
-            "description": "React, JSX, Tailwind, Jest",
-            "url": "http://google.com"
+            "cover": "/projects/Transpiler.png",
+            "title": "Python To C++ Transpiler",
+            "description": "Python, PLY, Yacc",
+            "url": "https://github.com/Scar-46/PythonToC-Transpiler"
         },
         {
-            "cover": "/projects/three.png",
-            "title": "PlaceHolder3",
-            "description": "React, JSX, Tailwind, Jest",
-            "url": "http://google.com"
-        },
-        {
-            "cover": "/projects/four.png",
-            "title": "PlaceHolder4",
-            "description": "React, JSX, Tailwind, Jest",
-            "url": "http://google.com"
-        },
-        {
-            "cover": "/projects/five.png",
-            "title": "PlaceHolder2",
-            "description": "React, JSX, Tailwind, Jest",
-            "url": "http://google.com"
-        },
-        {
-            "cover": "/projects/three.png",
-            "title": "PlaceHolder3",
-            "description": "React, JSX, Tailwind, Jest",
-            "url": "http://google.com"
-        },
-        {
-            "cover": "/projects/four.png",
-            "title": "PlaceHolder4",
-            "description": "React, JSX, Tailwind, Jest",
-            "url": "http://google.com"
+            "cover": "/projects/Deepfake.png",
+            "title": "Deepfake Detection Pipeline",
+            "description": "Python, TensorFlow, Pythorch",
+            "url": "https://github.com/Scar-46/DeepfakeDetection"
         }
     ]
 }
