@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/Porfolio/static/css/main.ef0a458a.css",
-    "main.js": "/Porfolio/static/js/main.f6661375.js",
-    "static/js/453.4dde2311.chunk.js": "/Porfolio/static/js/453.4dde2311.chunk.js",
-    "static/media/Figtree-VariableFont_wght.ttf": "/Porfolio/static/media/Figtree-VariableFont_wght.3b7241337f5a40f5f82a.ttf",
-    "static/media/logo-s.png": "/Porfolio/static/media/logo-s.aef1d120f0c7abe02ab0.png",
-    "static/media/CoolveticaRg-Regular.woff": "/Porfolio/static/media/CoolveticaRg-Regular.8307bfa187bccdc55f4d.woff",
-    "static/media/CoolveticaRg-Regular.woff2": "/Porfolio/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
-    "index.html": "/Porfolio/index.html",
-    "main.ef0a458a.css.map": "/Porfolio/static/css/main.ef0a458a.css.map",
-    "main.f6661375.js.map": "/Porfolio/static/js/main.f6661375.js.map",
-    "453.4dde2311.chunk.js.map": "/Porfolio/static/js/453.4dde2311.chunk.js.map"
+    "main.css": "/Portfolio/static/css/main.478e9eca.css",
+    "main.js": "/Portfolio/static/js/main.382d7bd3.js",
+    "static/js/453.0a7f0965.chunk.js": "/Portfolio/static/js/453.0a7f0965.chunk.js",
+    "static/media/Figtree-VariableFont_wght.ttf": "/Portfolio/static/media/Figtree-VariableFont_wght.3b7241337f5a40f5f82a.ttf",
+    "static/media/logo-s.png": "/Portfolio/static/media/logo-s.aef1d120f0c7abe02ab0.png",
+    "static/media/CoolveticaRg-Regular.woff": "/Portfolio/static/media/CoolveticaRg-Regular.8307bfa187bccdc55f4d.woff",
+    "static/media/CoolveticaRg-Regular.woff2": "/Portfolio/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
+    "index.html": "/Portfolio/index.html",
+    "main.478e9eca.css.map": "/Portfolio/static/css/main.478e9eca.css.map",
+    "main.382d7bd3.js.map": "/Portfolio/static/js/main.382d7bd3.js.map",
+    "453.0a7f0965.chunk.js.map": "/Portfolio/static/js/453.0a7f0965.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ef0a458a.css",
-    "static/js/main.f6661375.js"
+    "static/css/main.478e9eca.css",
+    "static/js/main.382d7bd3.js"
   ]
 }
