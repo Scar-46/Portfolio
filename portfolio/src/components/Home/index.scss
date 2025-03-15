@@ -1,15 +1,19 @@
-.home-page {
+.container.home-page {
+  min-height: 50vh;
+  padding-top: 50vh;
+  max-width: 75vw;
+  margin-left: 15vw;
+  
   .text-zone {
     position: absolute;
-    left: 10%;
-    top: 45%;
-    transform: translateY(-50%);
+    transform: translateY(-40%);
     width: 40%;
-    max-height: 90%;
+    max-height: 100%;
+
   }
 
   h1 {
-    color: #fff;
+    color: var(--font-color);
     font-size: 56px;
     line-height: 53px;
     margin: 0;
@@ -18,7 +22,7 @@
   }
 
   h2 {
-    color: #8d8d8d;
+    color: var(--secondary-color);
     margin-top: 20px;
     font-weight: 400;
     font-size: 12px;
@@ -28,16 +32,16 @@
   }
 
   .flat-button, .anchor-button {
-    color: #E35336;
+    color: var(--primary-color);
     padding: 10px 18px;
-    border: 1px solid #E35336;
+    border: 1px solid var(--primary-color);
     margin-top: 25px;
     float: left;
-    animation: fadeInAnimation 1s 1.8s backwards;
+    animation: fadeIn 1s 2s backwards;
 
     &:hover {
-      background: #E35336;
-      color: #181818fb;
+      background: var(--primary-color);
+      color: var(--background-color);
     }
   }
 
@@ -56,18 +60,25 @@
 }
 
 @media screen and (max-width: 1200px) {
-  .home-page {
+  #home {
+    min-height: 100vh;
+  }
+
+  .container.home-page {
+    max-width: 100vw;
+    padding-top: 0px;
+    margin: 0;
+    
     .text-zone {
       position: initial;
       width: 100%;
       text-align: center;
       transform: none;
-      padding: 30px 5px 5px 5px;
       box-sizing: border-box;
     }
 
     h1 {
-      font-size: 56px;
+      font-size: 50px;
     }
 
     .button-zone {
@@ -79,9 +90,12 @@
     }
 
     .logo-container { 
+      display: flex;
       position: static;
       width: 100%;
       text-align: center;
+      justify-content: center;
+      align-items: center;
       transform: none;
       padding: 15px 5px 5px 5px;
       box-sizing: border-box;

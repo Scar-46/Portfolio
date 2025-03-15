@@ -5,12 +5,26 @@ html {
 body {
   margin: 0;
   font: 300 11px/1.4 'Helvetica Neue', sans-serif;
-  color: #444;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #181818;
-  overflow: hidden;
+  overflow: auto;
   display: block;
+}
+
+:root {
+  --primary-color: #E35336;
+  --secondary-color: #181818;
+  --font-color: #181818;
+  --sfont-color: #fdf4dc;
+  --background-color: #fdf4dc;
+}
+
+[data-theme="dark"] {
+  --primary-color: #E35336;
+  --secondary-color: #4e4e4e;
+  --font-color: #fdf4dc;
+  --sfont-color: #fdf4dc;
+  --background-color: #181818;
 }
 
 .dashboard {

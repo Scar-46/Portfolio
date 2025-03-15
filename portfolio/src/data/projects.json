@@ -1,0 +1,22 @@
+{
+    "projects": [
+        {
+            "cover": "/projects/Game.png",
+            "title": "Unity 2D Roguelike Game",
+            "description": "Unity2D, C#, State machine",
+            "url": "https://github.com/Scar-46/UnityTopdownGame"
+        },
+        {
+            "cover": "/projects/Transpiler.png",
+            "title": "Python To C++ Transpiler",
+            "description": "Python, PLY, Yacc",
+            "url": "https://github.com/Scar-46/PythonToC-Transpiler"
+        },
+        {
+            "cover": "/projects/Deepfake.png",
+            "title": "Deepfake Detection Pipeline",
+            "description": "Python, TensorFlow, Pythorch",
+            "url": "https://github.com/Scar-46/DeepfakeDetection"
+        }
+    ]
+}

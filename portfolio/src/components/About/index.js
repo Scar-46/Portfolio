@@ -1,13 +1,20 @@
-import { useState } from 'react'
+import React, { useEffect, useState } from "react";
 import { faPython, faAngular, faCss3Alt, faGitAlt, faHtml5, faJsSquare, faReact, faDocker } from '@fortawesome/free-brands-svg-icons'
-import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './index.scss'
 
 const About = () => {
-  const [letterClass] = useState('text-animate')
-  
+  const [letterClass, setLetterClass] = useState('text-animate');
+
+  useEffect(() => {
+      const timer = setTimeout(() => {
+          setLetterClass('text-animate-hover');
+      }, 4000);
+
+      return () => clearTimeout(timer);
+  }, []);
+
   return (
     <>
       <div className="container about-page">
@@ -19,10 +26,15 @@ const About = () => {
               idx={15}
             />
           </h1>
-          <p>
+          <p align="LEFT">
             I'm a highly motivated Computer Science graduate looking for a role in an established company, 
             where I can work with the latest technologies on challenging and diverse projects. With expertise in Python, 
             C++, and C#, I aim to bring innovative solutions and contribute to the success of the team.
+          </p>
+          <p align="LEFT">
+            I'm quiet confident, naturally curious, and always working on improving my skills one technical challenge 
+            at a time. Whether it's front-end, back-end, or full-stack development, I thrive on building high-quality, 
+            efficient solutions and collaborating in Agile environments.
           </p>
           <p align="LEFT">
             I'm quiet confident, naturally curious, and always working on improving my skills one technical challenge 
@@ -66,7 +78,6 @@ const About = () => {
             </div>
         </div>
       </div>
-      <Loader type="ball-scale-ripple" />
     </>
   )
 }

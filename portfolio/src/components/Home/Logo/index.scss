@@ -1,28 +1,24 @@
 .logo-container {
-  z-index: 0;
-  width: 400px;
-  height: 400px;
-  opacity: 0;
   position: absolute;
-  top: 0;
-  right: 15%;
-  bottom: 0;
-  left: auto;
-  margin: auto;
+  left: 65%;
+  transform: translateY(-50%);
+}
 
-  .solid-logo {
-    position: static;
-    top: auto;
-    right: auto;
-    bottom: auto;
-    margin: auto;
-    max-width: 450px;
-    width: 75vw;
-    height: auto;
-    opacity: 0;
-    aspect-ratio: 1 / 1;
-    z-index: 1;
-    border-radius: 50%;
-    object-fit: cover;
-  }
+.solid-logo {
+  border: 2px solid var(--secondary-color);
+  width: 80%;
+  max-width: 600px;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.solid-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
 }

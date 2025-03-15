@@ -1,24 +1,37 @@
-import { Route, Routes } from 'react-router-dom'
-import Home from './components/Home'
-import About from './components/About'
-import Contact from './components/Contact'
-import Layout from './components/Layout'
-import Portfolio from './components/Portfolio'
-import './App.scss'
+import Home from './components/Home';
+import About from './components/About';
+import Experience from './components/Experience';
+import Contact from './components/Contact';
+import Layout from './components/Layout';
+import Projects from './components/Projects';
+import Toggle from './components/Toggle';
+import { useState } from 'react';
+import './App.scss';
 
 function App() {
+  const [isDark, setIsDark] = useState(true);
+
   return (
-    <>
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route path="about" element={<About />} />
-          <Route path="/portfolio" element={<Portfolio />} />
-          <Route path="/contact" element={<Contact />} />
-        </Route>
-      </Routes>
-    </>
-  )
+    <div className="App" data-theme={isDark ? "dark" : "light"}>
+      <Toggle isChecked={isDark} handleChange={() => setIsDark(!isDark)}></Toggle>
+      <Layout />
+      <section id="home" className="section">
+        <Home />
+      </section>
+      <section id="about" className="section">
+        <About />
+      </section>
+      <section id="experience" className="section">
+        <Experience />
+      </section>
+      <section id="projects" className="section">
+        <Projects />
+      </section>
+      <section id="contact" className="section">
+        <Contact />
+      </section>
+    </div>
+  );
 }
 
-export default App
+export default App;

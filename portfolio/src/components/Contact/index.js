@@ -1,5 +1,4 @@
 import { useEffect, useState, useRef } from 'react';
-import Loader from 'react-loaders';
 import AnimatedLetters from '../AnimatedLetters';
 import './index.scss';
 
@@ -58,7 +57,6 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      <Loader type="ball-scale-ripple" />
     </>
   );
 };
