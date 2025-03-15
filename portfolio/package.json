@@ -1,6 +1,6 @@
 {
- "homepage": "https://scar-46.github.io/Porfolio/",
- "name": "Porfolio",
+ "homepage": "https://scar-46.github.io/Portfolio/",
+ "name": "Portfolio",
  "version": "0.1.0",
  "dependencies": {
   "@fortawesome/free-brands-svg-icons": "^6.7.2",
