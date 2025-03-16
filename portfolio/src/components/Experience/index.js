@@ -63,7 +63,7 @@ const Experience = () => {
         </div>
 
         <div className="experience-image">
-          <img src={hoveredImage} alt="Experience" />
+          <img src={process.env.PUBLIC_URL + hoveredImage} alt="Experience" />
         </div>
       </div>
     </div>

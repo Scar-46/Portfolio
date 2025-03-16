@@ -70,7 +70,7 @@ const Projects = () => {
                 <div className={`projects-gallery ${animationClass}`}>
                     {visibleProjects.map((port, idx) => (
                         <div className="image-box" key={idx}>
-                            <img src={port.cover} className="projects-image" alt="projects" />
+                            <img src={process.env.PUBLIC_URL + port.cover} className="projects-image" alt="projects" />
                             <div className="content">
                                 <p className="title">{port.name}</p>
                                 <h4 className="description">{port.description}</h4>

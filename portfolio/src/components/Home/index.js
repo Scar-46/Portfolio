@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link } from 'react-router-dom'
+import { Link } from 'react-scroll';
 import AnimatedLetters from '../AnimatedLetters'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
@@ -18,6 +18,7 @@ const Home = () => {
 
       return () => clearTimeout(timer);
   }, []);
+  
   
   return (
     <>
@@ -44,7 +45,7 @@ const Home = () => {
           </h1>
           <h2>Full Stack Developer & Data Analyst</h2>
           <div className="button-zone">
-            <Link to="/contact" className="flat-button">CONTACT ME</Link>
+            <Link to="contact" smooth={true} duration={500} className="flat-button">CONTACT ME</Link>
             <a target="_blank" rel='noreferrer' href="https://github.com/Scar-46">
               <FontAwesomeIcon icon={faGithub} size="2x" color="var(--secondary-color)" className="anchor-button"/>
             </a>
