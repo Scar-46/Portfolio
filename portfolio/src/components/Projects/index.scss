@@ -18,8 +18,9 @@
   gap: 9px;
 }
 
-
 .image-box {
+  box-sizing: border-box;
+  border: 2px solid var(--secondary-color);
   position: relative;
   aspect-ratio: 16 / 9 ;
   overflow: hidden;
@@ -105,6 +106,10 @@
     bottom: 0;
     background: transparent;
   }
+}
+
+.image-box:hover {
+  border: 2px solid var(--primary-color);
 }
 
 

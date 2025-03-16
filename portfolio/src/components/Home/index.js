@@ -43,7 +43,7 @@ const Home = () => {
               idx={20}
             />
           </h1>
-          <h2>Full Stack Developer & Data Analyst</h2>
+          <h2>Full Stack Developer & Data Engineer</h2>
           <div className="button-zone">
             <Link to="contact" smooth={true} duration={500} className="flat-button">CONTACT ME</Link>
             <a target="_blank" rel='noreferrer' href="https://github.com/Scar-46">
