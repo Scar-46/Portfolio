@@ -1,5 +1,6 @@
 import { useEffect, useState, useRef } from 'react';
 import AnimatedLetters from '../AnimatedLetters';
+import emailjs from '@emailjs/browser'
 import './index.scss';
 
 const Contact = () => {
@@ -13,10 +14,21 @@ const Contact = () => {
     return () => clearTimeout(timeoutId);
   }, []);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    alert('Form submitted! (Implement backend to handle submission)');
-  };
+  const sendEmail = (e) => {
+    e.preventDefault()
+
+    emailjs
+      .sendForm('service_rak6dir', 'template_4t6slro', form.current, 'AoZzkaej0r6R-GfpE')
+      .then(
+        () => {
+          alert('Message successfully sent!')
+          window.location.reload(false)
+        },
+        () => {
+          alert('Failed to send the message, please try again')
+        }
+      )
+  }
 
   return (
     <>
@@ -35,7 +47,7 @@ const Contact = () => {
             feel free to contact me using the form below.
           </p>
           <div className="contact-form">
-            <form ref={form} onSubmit={handleSubmit}>
+            <form ref={form} onSubmit={sendEmail}>
               <ul>
                 <li className="half">
                   <input placeholder="Name" type="text" name="name" required />
