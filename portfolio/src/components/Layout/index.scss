@@ -14,16 +14,16 @@
 
   h1 {
     position: relative;
-    font-size: 3.5rem;
+    font-size: 56px;
     font-family: 'Coolvetica';
     color: var(--primary-color);
     font-weight: 400;
     margin-top: 0;
-    margin-bottom: 1.25rem;
+    margin-bottom: 20px;
   }
 
   p {
-    font-size: 0.9375rem;
+    font-size: 15px;
     color: var(--font-color);
     font-family: Figtree;
     max-width: 100%;
@@ -82,7 +82,7 @@
     &.about-page, &.contact-page, &.projects-page {
       .text-zone {
         width: 100%;
-        padding: 1.25rem;
+        padding: 20px;
         box-sizing: border-box;
       }
     }

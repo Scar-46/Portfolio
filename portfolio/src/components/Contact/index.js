@@ -68,7 +68,6 @@ const Contact = () => {
             </form>
           </div>
         </div>
-        <div className="separator"></div>
       </div>
     </>
   );

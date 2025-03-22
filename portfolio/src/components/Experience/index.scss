@@ -6,13 +6,13 @@
 .experiences {
   display: flex;
   flex-direction: column;
-  gap: 1.25rem;
+  gap: 20px;
   width: 70%;
 }
 
 .experience {
   border: 2px solid var(--secondary-color);
-  padding: 1.25rem;
+  padding: 20px;
 
   .experience-header {
     display: flex;
@@ -21,14 +21,14 @@
   
   .title {
     font-family: 'Figtree', sans-serif;
-    font-size: 1.125rem;
+    font-size: 18px;
     color: var(--font-color);
     margin: 0;
   }
   
   .date {
     font-family: 'Figtree', sans-serif;
-    font-size: .875rem;
+    font-size: 14px;
     color: var(--primary-color);
     margin: 0;
   }
@@ -36,7 +36,7 @@
   .company {
     font-family: 'Figtree', sans-serif;
     margin-top: 5px;
-    font-size: .875rem;
+    font-size: 14px;
     color: var(--secondary-color);
     
   }
@@ -44,7 +44,7 @@
   ul {
     font-family: 'Figtree', sans-serif;
     color: var(--font-color);
-    font-size: .875rem;
+    font-size: 14px;
     margin-bottom: 0;
   }
   
@@ -119,16 +119,17 @@ img {
   }
   
   .title {
-    font-size: 1rem !important;
+    font-size: 16px !important;
     width: 70%;
 
   }
   .date{
-    font-size: .75rem !important;
+    font-size: 11px !important;
+    width: 22%;
   }
 
   .company {
-    font-size: .75rem !important;
+    font-size: 11px !important;
   }
 
   .experiences {
@@ -139,7 +140,7 @@ img {
   }
 
   ul {
-    font-size: .75rem !important;
+    font-size: 12px !important;
   }
 
   .experience {
