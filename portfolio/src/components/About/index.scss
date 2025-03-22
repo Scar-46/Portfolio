@@ -16,7 +16,7 @@
   align-items: center;
   left: 50%;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 1.25rem;
 }
 
 .skill {
@@ -27,18 +27,17 @@
   width: 100px;
   height: 100px;
   border: 2px solid var(--secondary-color);
-  padding: 10px;
+  padding: 0.625rem;
 }
 
 .skills svg {
-  font-size: 6rem;
+  font-size: 4.5rem;
   transition: opacity 0.3s ease-out;
 }
 
 .skill-name {
   position: absolute;
   bottom: 5px;
-  font-size: 14px;
   opacity: 0;
   padding: 30px 30px 30px 30px;
 }
@@ -52,7 +51,7 @@
   opacity: 1;
   color: var(--primary-color);
   border-color: var(--primary-color);
-  font-size: 15px;
+  font-size: 1rem;
   font-family: Figtree;
   font-weight: 50px;
 }
@@ -75,7 +74,7 @@
   .skills {
     position: static;
     transform: none;
-    margin: 20px;
+    margin: 1.25rem;
     padding-bottom: 100px;
   }
 }
