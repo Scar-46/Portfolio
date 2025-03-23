@@ -108,6 +108,7 @@
 }
 
 .contact-info {
+  margin-top: 10%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -140,23 +141,24 @@
 
 .social-links {
   display: flex;
-  justify-content: center;
-  margin-top: 30%;
+  justify-content: end;
+  margin-top: 40%;
   gap: 15px;
 
   a  {
-    color: var(--primary-color);
+    color: var(--secondary-color);
     padding: 5px 10px;
-    border: 1px solid var(--primary-color);
+    border: 1px solid var(--secondary-color);
     border-radius: 4px;
     float: left;
     animation: fadeIn 1s 2s backwards;
     cursor: pointer;
-    font-size: 26px;
+    font-size: 15px;
 
     &:hover {
       background: var(--primary-color);
       color: var(--background-color);
+      border-color: var(--primary-color);
     }
   }
 }

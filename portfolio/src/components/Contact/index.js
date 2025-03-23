@@ -3,7 +3,7 @@ import AnimatedLetters from '../AnimatedLetters';
 import emailjs from '@emailjs/browser';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
-import { faFilePdf, faLocationDot, faPhone, faEnvelope} from '@fortawesome/free-solid-svg-icons';
+import { faFileArrowDown, faLocationDot, faPhone, faEnvelope} from '@fortawesome/free-solid-svg-icons';
 
 import './index.scss';
 
@@ -98,17 +98,7 @@ const Contact = () => {
                 <p>oscar_es46@outlook.com</p>
               </div>
             </div>
-            <div className="social-links">
-              <a target="_blank" rel='noreferrer' href="https://github.com/Scar-46">
-                <FontAwesomeIcon icon={faGithub} className="git-button"/>
-              </a>
-              <a target="_blank" rel='noreferrer' href="https://www.linkedin.com/in/oscar-fer-jim/">
-                <FontAwesomeIcon icon={faLinkedin} className="linkedin-button"/>
-              </a>
-              <a href="/cv/OscarFernándezJiménez_CV.pdf" download>
-                <FontAwesomeIcon icon={faFilePdf} className="linkedin-button"/>
-              </a>
-            </div>
+
           </div>
         </div>  
         <div className="separator"></div>
