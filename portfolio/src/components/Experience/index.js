@@ -21,7 +21,7 @@ const Experience = () => {
         <h1>
           <AnimatedLetters
             letterClass={letterClass}
-            strArray={["E", "x", "p", "e", "r", "i", "e", "n", "c", "e"]}
+            strArray={["H", "i", "s", "t", "o", "r", "y"]}
             idx={15}
           />
         </h1>

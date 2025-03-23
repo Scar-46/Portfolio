@@ -54,7 +54,7 @@ const Navbar = () => {
         <Link to="home" smooth={true} duration={500} className={`home-link ${currentSection === 'home' ? 'active' : ''}`} onClick={() => setShowNav(false)}>
           <FontAwesomeIcon icon={faHome} color="var(--secondary-color)" />
         </Link>
-        <Link to="about" smooth={true} duration={500} offset={-200} className={`about-link ${currentSection === 'about' ? 'active' : ''}`} onClick={() => setShowNav(false)}>
+        <Link to="about" smooth={true} duration={500} offset={showNav ? 0 : -200} className={`about-link ${currentSection === 'about' ? 'active' : ''}`} onClick={() => setShowNav(false)}>
           <FontAwesomeIcon icon={faUser} color="var(--secondary-color)" />
         </Link>
         <Link to="experience" smooth={true} duration={500} className={`experience-link ${currentSection === 'experience' ? 'active' : ''}`} onClick={() => setShowNav(false)}>          

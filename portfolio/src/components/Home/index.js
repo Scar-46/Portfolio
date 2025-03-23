@@ -47,10 +47,10 @@ const Home = () => {
           <div className="button-zone">
             <Link to="contact" smooth={true} duration={500} className="flat-button">CONTACT ME</Link>
             <a target="_blank" rel='noreferrer' href="https://github.com/Scar-46">
-              <FontAwesomeIcon icon={faGithub} size="2x" color="var(--secondary-color)" className="anchor-button"/>
+              <FontAwesomeIcon icon={faGithub} size="2x" color="var(--secondary-color)" className="git-button"/>
             </a>
             <a target="_blank" rel='noreferrer' href="https://www.linkedin.com/in/oscar-fer-jim/">
-              <FontAwesomeIcon icon={faLinkedin} size="2x" color="var(--secondary-color)" className="anchor-button"/>
+              <FontAwesomeIcon icon={faLinkedin} size="2x" color="var(--secondary-color)" className="linkedin-button"/>
             </a>
           </div>
         </div>

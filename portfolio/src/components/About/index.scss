@@ -1,6 +1,7 @@
 
 #about {
   min-height: 65vh;
+  padding-bottom: 5vh;
 }
 
 .container.about-page{
@@ -27,7 +28,9 @@
   width: 100px;
   height: 100px;
   border: 2px solid var(--secondary-color);
+  border-radius: 4px;
   padding: 10px;
+  cursor: default;
 }
 
 .skills svg {

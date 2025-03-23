@@ -1,6 +1,7 @@
 
 .experience-content {
   display: flex;
+  flex-direction: row;
 }
 
 .experiences {
@@ -11,8 +12,10 @@
 }
 
 .experience {
+  position: relative;
   border: 2px solid var(--secondary-color);
-  padding: 20px;
+  border-radius: 4px;
+  padding: 30px;
 
   .experience-header {
     display: flex;
@@ -21,7 +24,7 @@
   
   .title {
     font-family: 'Figtree', sans-serif;
-    font-size: 18px;
+    font-size: 24px;
     color: var(--font-color);
     margin: 0;
   }
@@ -29,15 +32,17 @@
   .date {
     font-family: 'Figtree', sans-serif;
     font-size: 14px;
+    font-weight: 100;
     color: var(--primary-color);
     margin: 0;
   }
   
   .company {
     font-family: 'Figtree', sans-serif;
+    font-weight: 100;
     margin-top: 5px;
-    font-size: 14px;
-    color: var(--secondary-color);
+    font-size: 16px;
+    color: var(--font-color);
     
   }
   
@@ -57,21 +62,46 @@
   border-color: var(--primary-color);
 }
 
+.experience::after,
+.experience::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 100%;
+}
+
+.experience::after {
+  border: solid 23px;
+  border-color: transparent transparent transparent var(--background-color);
+}
+
+.experience::before {
+  border: solid 26px;
+  border-color: transparent transparent transparent var(--secondary-color);
+  border-radius: 4px;
+
+}
+
+.experience:hover::before {
+  border-color: transparent transparent transparent var(--primary-color);
+}
+
 .journey-dots {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 30%;
+  gap: 29%; //TODO: Fix this to adjust to the number of experiences
 }
 
 .journey-dots::before {
   content: '';
   position: absolute;
   left: 50%;
-  top: 15%;
-  height: 70%;
+  top: 5%;
+  height: 90%;
   border-left: 2px solid var(--secondary-color);
   z-index: 0;
 }
@@ -79,8 +109,8 @@
 .dot-ex {
   width: 30px;
   height: 30px;
-  margin-left: 25px;
-  margin-right: 25px;
+  margin-left: 30px;
+  margin-right: 30px;
   border-radius: 50%;
   background-color: var(--background-color);
   border: 2px solid var(--secondary-color);
@@ -103,6 +133,7 @@
   align-items: center;
   width: 540px;
   border: 2px solid var(--secondary-color);
+  border-radius: 4px;
 }
 
 img {
@@ -125,7 +156,6 @@ img {
   }
   .date{
     font-size: 11px !important;
-    width: 22%;
   }
 
   .company {
@@ -147,6 +177,11 @@ img {
     border: 2px solid var(--secondary-color);
     padding: 15px;
     max-width: 100%;
+  }
+
+  .experience::after,
+  .experience::before {
+    display: none;
   }
 
   .journey-dots {
