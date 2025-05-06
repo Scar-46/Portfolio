@@ -98,7 +98,17 @@ const Contact = () => {
                 <p>oscar_es46@outlook.com</p>
               </div>
             </div>
-
+            <div className="social-links">
+              <a target="_blank" rel='noreferrer' href="https://github.com/Scar-46">
+                <FontAwesomeIcon icon={faGithub} className="git-button"/>
+              </a>
+              <a target="_blank" rel='noreferrer' href="https://www.linkedin.com/in/oscar-fer-jim/">
+                <FontAwesomeIcon icon={faLinkedin} className="linkedin-button"/>
+              </a>
+              <a href="/cv/OscarFernándezJiménez_CV.pdf" download>
+                <FontAwesomeIcon icon={faFileArrowDown} className="cv-button"/>
+              </a>
+            </div>
           </div>
         </div>  
         <div className="separator"></div>

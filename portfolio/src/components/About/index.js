@@ -32,14 +32,13 @@ const About = () => {
             C++, and C#, I aim to bring innovative solutions and contribute to the success of the team.
           </p>
           <p align="LEFT">
-            I'm quiet confident, naturally curious, and always working on improving my skills one technical challenge 
-            at a time. Whether it's front-end, back-end, or full-stack development, I thrive on building high-quality, 
-            efficient solutions and collaborating in Agile environments.
+            I am naturally curious and always eager to improve, approaching each challenge as an opportunity to expand my knowledge.
+            Whether working on front-end, back-end, or full-stack development, I strive to build efficient, 
+            high-quality solutions while collaborating effectively in Agile environments.
           </p>
           <p align="LEFT">
-            I'm quiet confident, naturally curious, and always working on improving my skills one technical challenge 
-            at a time. Whether it's front-end, back-end, or full-stack development, I thrive on building high-quality, 
-            efficient solutions and collaborating in Agile environments.
+            I believe that teamwork, adaptability, and a willingness to learn are key to success in any role. 
+            My goal is to contribute to a dynamic team where I can leverage my skills while gaining new insights from experienced professionals.
           </p>
         </div>
 
