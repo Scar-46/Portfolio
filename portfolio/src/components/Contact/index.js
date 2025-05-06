@@ -98,7 +98,7 @@ const Contact = () => {
                 <p>oscar_es46@outlook.com</p>
               </div>
             </div>
-            <div className="social-links">
+            {/* <div className="social-links">
               <a target="_blank" rel='noreferrer' href="https://github.com/Scar-46">
                 <FontAwesomeIcon icon={faGithub} className="git-button"/>
               </a>
@@ -108,7 +108,7 @@ const Contact = () => {
               <a href="/cv/OscarFernándezJiménez_CV.pdf" download>
                 <FontAwesomeIcon icon={faFileArrowDown} className="cv-button"/>
               </a>
-            </div>
+            </div> */}
           </div>
         </div>  
         <div className="separator"></div>
