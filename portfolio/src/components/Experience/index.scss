@@ -138,14 +138,13 @@
   &.fade-out img {
     opacity: 0;
   }
-
-}
-
-img {
-  max-width: 100%;
-  object-fit: cover;
-  opacity: 1;
-  transition: opacity 0.17s ease-in-out;
+  
+  img {
+    max-width: 100%;
+    object-fit: cover;
+    opacity: 1;
+    transition: opacity 0.17s ease-in-out;
+  }
 }
 
 @media screen and (max-width: 1200px) {
