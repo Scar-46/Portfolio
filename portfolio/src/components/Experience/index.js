@@ -7,6 +7,7 @@ const Experience = () => {
   const [letterClass, setLetterClass] = useState("text-animate");
   const [hoveredIndex, setHoveredIndex] = useState(null);
   const [hoveredImage, setHoveredImage] = useState(experiencesData[0].image);
+  const [imageClass, setImageClass] = useState("");
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -15,6 +16,16 @@ const Experience = () => {
     return () => clearTimeout(timer);
   }, []);
 
+  const handleImageChange = (image) => {
+    if (image === hoveredImage) return;
+
+    setImageClass("fade-out");
+
+    setTimeout(() => {
+      setHoveredImage(image);
+      setImageClass("");
+    }, 170);
+  };
   return (
     <div className="container experience-page">
       <div className="text-zone">
@@ -35,7 +46,7 @@ const Experience = () => {
               className="experience"
               onMouseEnter={() => {
                 setHoveredIndex(index);
-                setHoveredImage(exp.image);
+                handleImageChange(exp.image);
               }}
               onMouseLeave={() => setHoveredIndex(null)}
             >
@@ -62,7 +73,7 @@ const Experience = () => {
           ))}
         </div>
 
-        <div className="experience-image">
+        <div className={`experience-image ${imageClass}`}>
           <img src={process.env.PUBLIC_URL + hoveredImage} alt="Experience" />
         </div>
       </div>
